@@ -31,7 +31,7 @@ figure {
 }
 
 figcaption {
-    font-style: italic;
+    font-style: italic; /*Mudar o estilo da fonte*/
     margin-top: 10px;
 }
 
