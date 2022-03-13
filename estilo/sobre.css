@@ -11,6 +11,9 @@ h1 {
     background-image: url(../imagens/sobre-background.jpg);
     padding: 10px;
 }
+h1 + p { /*Altera a identação do primeiro parágrafo logo após o h1*/
+    text-indent: 0;
+}
 
 h2 {
     border-bottom: 2px solid #333333;
@@ -21,6 +24,13 @@ p {
     padding: 0 45px;
     text-indent: 15px;
 }
+:not(p) + p:first-line { /*Altera a primeira linha do parágrafo sem alterar os demais parágrafos*/
+    font-variant: small-caps;
+}
+p:first-letter { /*Altera a primeira letra de cada parágrafo*/
+    font-weight: bold;
+}
+
 
 figure {
     background-color: #F2EDED;
